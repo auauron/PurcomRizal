@@ -605,3 +605,201 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* British and American Vocabulary Section */
+.vocab-grid-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(420px, 1.25fr);
+  gap: 20px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.vocab-game-panel {
+  padding: 20px;
+  background: var(--surface);
+  position: sticky;
+  top: 78px;
+}
+
+.vocab-list-panel {
+  padding: 20px;
+  background: var(--surface);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* Match Game Layout */
+.match-game-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.match-column {
+  display: grid;
+  gap: 8px;
+}
+
+.match-btn {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-weight: 700;
+  text-align: center;
+  transition: all 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.match-btn:hover {
+  border-color: var(--accent-2);
+  background: #f1f4f6;
+  transform: translateY(-1px);
+}
+
+.match-btn.is-selected {
+  border-color: var(--accent-2);
+  background: #eef4f8;
+  color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(89, 109, 123, 0.16);
+  font-weight: 800;
+}
+
+.match-btn.is-matched {
+  border-color: rgba(47, 107, 79, 0.3);
+  background: #edf5ef;
+  color: var(--good);
+  cursor: not-allowed;
+  opacity: 0.65;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.match-btn.is-wrong-pair {
+  border-color: rgba(138, 63, 63, 0.58);
+  background: #f7eeee;
+  color: var(--bad);
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.game-feedback {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  font-size: 0.9rem;
+}
+
+.game-feedback.good {
+  border-color: rgba(47, 107, 79, 0.5);
+  background: #edf5ef;
+  color: var(--good);
+}
+
+.game-feedback strong {
+  color: var(--good);
+}
+
+/* Interactive Dictionary Layout */
+.vocab-table-header {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 8px 12px;
+  margin-top: 16px;
+  background: var(--surface-2);
+  border-bottom: 2px solid var(--line);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.vocab-list {
+  display: grid;
+  max-height: 480px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--surface);
+}
+
+.vocab-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  transition: background 120ms ease;
+}
+
+.vocab-row:last-child {
+  border-bottom: none;
+}
+
+.vocab-row:hover {
+  background: #fafaf9;
+}
+
+.vocab-term {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.vocab-term.british::after {
+  content: " (UK)";
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-3);
+  margin-left: 4px;
+}
+
+.vocab-term.american::after {
+  content: " (US)";
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-2);
+  margin-left: 4px;
+}
+
+.vocab-no-results {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 860px) {
+  .vocab-grid-layout {
+    grid-template-columns: 1fr;
+  }
+  .vocab-game-panel {
+    position: static;
+  }
+}
+

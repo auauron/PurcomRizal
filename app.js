@@ -316,6 +316,152 @@ const studyData = {
   ]
 };
 
+const britishAmericanTerms = [
+  // Page 165
+  { british: "accommodation", american: "accommodations" },
+  { british: "aeroplane", american: "airplane" },
+  { british: "aluminium", american: "aluminum" },
+  { british: "aniseed", american: "anise" },
+  { british: "anticlockwise", american: "counterclockwise" },
+  { british: "articulated lorry", american: "tractor-trailer" },
+  { british: "aubergine", american: "eggplant" },
+  { british: "baking tray", american: "cookie sheet" },
+  { british: "bank holiday", american: "legal holiday" },
+  { british: "biscuit", american: "cookie; cracker" },
+  { british: "black economy", american: "underground economy" },
+  { british: "blanket bath", american: "sponge bath" },
+  { british: "block of flats", american: "apartment building" },
+  { british: "bonnet (of a car)", american: "hood" },
+  { british: "boot (of a car)", american: "trunk" },
+  { british: "braces", american: "suspenders" },
+  { british: "breakdown van", american: "tow truck" },
+  { british: "candyfloss", american: "cotton candy" },
+  { british: "car park", american: "parking lot" },
+  { british: "casualty", american: "emergency room" },
+  { british: "catapult", american: "slingshot" },
+  { british: "chemist", american: "drugstore" },
+  { british: "chips", american: "french fries" },
+  { british: "cinema", american: "movie theater; the movies" },
+  { british: "cling film", american: "plastic wrap" },
+  { british: "cornflour", american: "cornstarch" },
+  { british: "cos (lettuce)", american: "romaine" },
+  { british: "cot", american: "crib" },
+  { british: "cot death", american: "crib death" },
+  { british: "cotton bud", american: "cotton swab" },
+  { british: "cotton wool", american: "absorbent cotton" },
+  { british: "council estate", american: "(housing) project" },
+  { british: "courgette", american: "zucchini" },
+  { british: "crisps", american: "chips; potato chips" },
+  { british: "current account", american: "checking account" },
+  { british: "dialling tone", american: "dial tone" },
+  { british: "drawing pin", american: "thumbtack" },
+  { british: "dressing gown", american: "robe; bathrobe" },
+  { british: "drink-driving", american: "drunk driving" },
+  { british: "drinks cupboard", american: "liquor cabinet" },
+  { british: "drinks party", american: "cocktail party" },
+  { british: "driving licence", american: "driver's license" },
+  { british: "dummy (for a baby)", american: "pacifier" },
+  { british: "dustbin", american: "garbage can" },
+  { british: "estate car", american: "station wagon" },
+  { british: "first floor", american: "second floor" },
+  { british: "flat", american: "apartment" },
+
+  // Page 166
+  { british: "flexitime", american: "flextime" },
+  { british: "flick knife", american: "switchblade" },
+  { british: "flyover", american: "overpass" },
+  { british: "football", american: "soccer" },
+  { british: "footway", american: "sidewalk" },
+  { british: "fringe (hair)", american: "bangs" },
+  { british: "full stop (punctuation)", american: "period" },
+  { british: "green fingers", american: "green thumb" },
+  { british: "ground floor", american: "first floor" },
+  { british: "hairslide", american: "barrette" },
+  { british: "hen night", american: "bachelorette party" },
+  { british: "hire purchase", american: "installment plan" },
+  { british: "hoarding", american: "billboard" },
+  { british: "hob", american: "stovetop" },
+  { british: "holdall", american: "carryall" },
+  { british: "holiday", american: "vacation" },
+  { british: "holidaymaker", american: "vacationer" },
+  { british: "homely", american: "homey" },
+  { british: "hosepipe", american: "(garden) hose" },
+  { british: "in hospital", american: "in the hospital" },
+  { british: "hot flush", american: "hot flash" },
+  { british: "housing estate", american: "housing development" },
+  { british: "hundreds and thousands", american: "sprinkles (for ice cream)" },
+  { british: "ice lolly", american: "popsicle (trademark)" },
+  { british: "icing sugar", american: "confectioners' sugar" },
+  { british: "indicator (on a car)", american: "turn signal" },
+  { british: "inside leg", american: "inseam" },
+  { british: "jelly babies", american: "jelly beans" },
+  { british: "joe bloggs", american: "joe blow" },
+  { british: "joe public", american: "john q. public" },
+  { british: "jumble sale", american: "rummage sale" },
+  { british: "jump lead", american: "jumper cable" },
+  { british: "jumper", american: "sweater" },
+  { british: "junior school", american: "elementary school" },
+  { british: "kennel", american: "doghouse" },
+  { british: "ladybird", american: "ladybug" },
+  { british: "a lettuce", american: "a head of lettuce" },
+  { british: "lift", american: "elevator" },
+  { british: "lolly", american: "lollipop" },
+  { british: "lorry", american: "truck" },
+  { british: "luggage van", american: "baggage car" },
+  { british: "maize", american: "corn" },
+  { british: "maths", american: "math" },
+  { british: "metalled road", american: "paved road" },
+  { british: "mobile phone", american: "cell phone" },
+  { british: "motorway", american: "expressway; highway" },
+  { british: "mum/mummy", american: "mom/mommy" },
+  { british: "newsreader", american: "newscaster" },
+  { british: "noughts and crosses", american: "tic-tac-toe" },
+  { british: "number plate", american: "license plate" },
+  { british: "pavement", american: "sidewalk" },
+
+  // Page 167
+  { british: "pay packet", american: "pay envelope" },
+  { british: "pedestrian crossing", american: "crosswalk" },
+  { british: "peg", american: "clothespin" },
+  { british: "petrol", american: "gas; gasoline" },
+  { british: "physiotherapy", american: "physical therapy" },
+  { british: "pinafore dress", american: "jumper" },
+  { british: "plain chocolate", american: "dark chocolate" },
+  { british: "plain flour", american: "all-purpose flour" },
+  { british: "polo neck", american: "turtleneck" },
+  { british: "postcode", american: "zip code" },
+  { british: "potato crisp", american: "potato chip" },
+  { british: "power point", american: "electrical outlet" },
+  { british: "pram", american: "baby carriage; stroller" },
+  { british: "queue", american: "line" },
+  { british: "racing car", american: "race car" },
+  { british: "railway", american: "railroad" },
+  { british: "rowing boat", american: "rowboat" },
+  { british: "sailing boat", american: "sailboat" },
+  { british: "saloon (car)", american: "sedan" },
+  { british: "sanitary towel", american: "sanitary napkin" },
+  { british: "shopping trolley", american: "shopping cart" },
+  { british: "skeleton in the cupboard", american: "skeleton in the closet" },
+  { british: "skimmed milk", american: "skim milk" },
+  { british: "skipping rope", american: "jump rope" },
+  { british: "snakes and ladders", american: "chutes and ladders" },
+  { british: "spring onion", american: "scallion" },
+  { british: "stag night", american: "bachelor party" },
+  { british: "starter", american: "appetizer" },
+  { british: "state school", american: "public school" },
+  { british: "sweet(s)", american: "candy" },
+  { british: "takeaway (food)", american: "takeout; to go" },
+  { british: "trainers", american: "sneakers" },
+  { british: "transport cafe", american: "truck stop" },
+  { british: "trolley", american: "shopping cart" },
+  { british: "vacuum flask", american: "thermos bottle" },
+  { british: "wardrobe", american: "closet" },
+  { british: "white coffee", american: "coffee with cream" },
+  { british: "wholemeal bread", american: "wholewheat bread" },
+  { british: "wing (of a car)", american: "fender" },
+  { british: "zed (letter z)", american: "zee" }
+];
+
 const quizBank = [
   {
     subject: "purcom",
@@ -965,6 +1111,143 @@ const quizBank = [
       ["dead", "already dead"]
     ],
     explanation: "The handout says the Americans preferred a peaceful nonmilitant hero, one with no qualms on American imperialism, and one already dead."
+  },
+  // British and American English terms questions
+  {
+    subject: "purcom",
+    mode: "mcq",
+    prompt: "What is the American counterpart of the British term 'aubergine'?",
+    options: ["Zucchini", "Eggplant", "Cabbage", "Lettuce"],
+    answer: "Eggplant",
+    explanation: "Aubergine is the British English term for eggplant."
+  },
+  {
+    subject: "purcom",
+    mode: "mcq",
+    prompt: "If someone in London mentions a 'boot' of a car, what is the American equivalent?",
+    options: ["Hood", "Fender", "Trunk", "Windshield"],
+    answer: "Trunk",
+    explanation: "The boot of a car in British English is called the trunk in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "mcq",
+    prompt: "Which of these terms is the British counterpart of the American word 'cotton candy'?",
+    options: ["Candyfloss", "Sweet(s)", "Ice lolly", "Lolly"],
+    answer: "Candyfloss",
+    explanation: "Candyfloss is British English; cotton candy is American."
+  },
+  {
+    subject: "purcom",
+    mode: "mcq",
+    prompt: "What does a British person mean by 'biscuit' when an American might mean a cracker or cookie?",
+    options: ["Scone", "Biscuit", "Cookie; cracker", "Cake"],
+    answer: "Cookie; cracker",
+    explanation: "Biscuit in British English translates to cookie or cracker in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "mcq",
+    prompt: "In the UK, 'chips' refers to French fries. What does the British term 'crisps' refer to in American English?",
+    options: ["Crackers", "Potato chips", "Biscuits", "Popcorn"],
+    answer: "Potato chips",
+    explanation: "Crisps are potato chips in American English, while chips are French fries."
+  },
+  {
+    subject: "purcom",
+    mode: "tf",
+    prompt: "The British counterpart of the American punctuation term 'period' is 'full stop'.",
+    options: ["True", "False"],
+    answer: "True",
+    explanation: "Full stop is used in British English for the punctuation mark '.'. Period is American."
+  },
+  {
+    subject: "purcom",
+    mode: "tf",
+    prompt: "In American English, a 'flat' is called an 'apartment building'.",
+    options: ["True", "False"],
+    answer: "False",
+    explanation: "A 'flat' is called an 'apartment' in American English. An 'apartment building' is a 'block of flats'."
+  },
+  {
+    subject: "purcom",
+    mode: "tf",
+    prompt: "The American counterpart of 'aeroplane' is spelled 'airplane'.",
+    options: ["True", "False"],
+    answer: "True",
+    explanation: "Aeroplane is British English spelling; airplane is American."
+  },
+  {
+    subject: "purcom",
+    mode: "identification",
+    prompt: "What is the British English term for 'drugstore'?",
+    answer: "Chemist",
+    aliases: ["chemist", "chemist shop", "the chemist"],
+    explanation: "Chemist is the British term for drugstore."
+  },
+  {
+    subject: "purcom",
+    mode: "identification",
+    prompt: "What is the American English term for the British word 'lorry'?",
+    answer: "Truck",
+    aliases: ["truck"],
+    explanation: "A lorry in British English is a truck in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "identification",
+    prompt: "What is the American term for the British word 'lift'?",
+    answer: "Elevator",
+    aliases: ["elevator"],
+    explanation: "A lift in British English is an elevator in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "identification",
+    prompt: "What is the British term for the American 'garbage can'?",
+    answer: "Dustbin",
+    aliases: ["dustbin"],
+    explanation: "A dustbin in British English corresponds to a garbage can in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "classification",
+    prompt: "Classify the word 'bonnet' (of a car) as British or American English.",
+    options: ["American English", "British English"],
+    answer: "British English",
+    explanation: "Bonnet is the British English term for a car's hood."
+  },
+  {
+    subject: "purcom",
+    mode: "classification",
+    prompt: "Classify the word 'sidewalk' as British or American English.",
+    options: ["American English", "British English"],
+    answer: "American English",
+    explanation: "Sidewalk is American English. The British counterparts are pavement or footway."
+  },
+  {
+    subject: "purcom",
+    mode: "classification",
+    prompt: "Classify 'turtleneck' as British or American English.",
+    options: ["American English", "British English"],
+    answer: "American English",
+    explanation: "Turtleneck is American English. The British term is polo neck."
+  },
+  {
+    subject: "purcom",
+    mode: "classification",
+    prompt: "Classify 'wing' (of a car) as British or American English.",
+    options: ["American English", "British English"],
+    answer: "British English",
+    explanation: "The wing of a car in British English corresponds to the fender in American English."
+  },
+  {
+    subject: "purcom",
+    mode: "classification",
+    prompt: "Classify the word 'sweets' (referring to candy) as British or American English.",
+    options: ["American English", "British English"],
+    answer: "British English",
+    explanation: "Sweets is British English; candy is American."
   }
 ];
 
@@ -1034,12 +1317,25 @@ const els = {
   scoreText: document.querySelector("#scoreText"),
   accuracyText: document.querySelector("#accuracyText"),
   searchInput: document.querySelector("#searchInput"),
-  cheatGrid: document.querySelector("#cheatGrid")
+  cheatGrid: document.querySelector("#cheatGrid"),
+  vocabSearchInput: document.querySelector("#vocabSearchInput"),
+  vocabList: document.querySelector("#vocabList"),
+  britishList: document.querySelector("#britishList"),
+  americanList: document.querySelector("#americanList"),
+  restartGameBtn: document.querySelector("#restartGameBtn"),
+  gameFeedback: document.querySelector("#gameFeedback")
 };
 
 const state = {
   currentQuestion: null,
   score: loadScore()
+};
+
+const matchGameState = {
+  selectedBritish: null,
+  selectedAmerican: null,
+  matchedPairsCount: 0,
+  currentRoundTerms: []
 };
 
 function loadScore() {
@@ -1300,6 +1596,136 @@ function renderCheatSheet() {
   `).join("") || `<p>No match yet. Try a shorter keyword.</p>`;
 }
 
+function renderBritAmericanTerms() {
+  const search = normalize(els.vocabSearchInput.value);
+  const filtered = britishAmericanTerms.filter((item) => {
+    const text = normalize(`${item.british} ${item.american}`);
+    return !search || text.includes(search);
+  });
+
+  els.vocabList.innerHTML = filtered.map((item) => `
+    <div class="vocab-row">
+      <span class="vocab-term british">${escapeHtml(item.british)}</span>
+      <span class="vocab-term american">${escapeHtml(item.american)}</span>
+    </div>
+  `).join("") || `<div class="vocab-no-results">No matching terms found.</div>`;
+}
+
+function shuffle(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function initMatchGame() {
+  matchGameState.selectedBritish = null;
+  matchGameState.selectedAmerican = null;
+  matchGameState.matchedPairsCount = 0;
+  els.gameFeedback.hidden = true;
+  els.gameFeedback.textContent = "";
+
+  // Choose 5 random distinct terms
+  const shuffledAll = shuffle(britishAmericanTerms);
+  matchGameState.currentRoundTerms = shuffledAll.slice(0, 5);
+
+  const britishItems = matchGameState.currentRoundTerms.map((t, idx) => ({ text: t.british, id: idx }));
+  const americanItems = matchGameState.currentRoundTerms.map((t, idx) => ({ text: t.american, id: idx }));
+
+  const shuffledBritish = shuffle(britishItems);
+  const shuffledAmerican = shuffle(americanItems);
+
+  els.britishList.innerHTML = shuffledBritish.map(item => `
+    <button class="match-btn" data-type="british" data-id="${item.id}">
+      ${escapeHtml(item.text)}
+    </button>
+  `).join("");
+
+  els.americanList.innerHTML = shuffledAmerican.map(item => `
+    <button class="match-btn" data-type="american" data-id="${item.id}">
+      ${escapeHtml(item.text)}
+    </button>
+  `).join("");
+
+  // Attach event listeners
+  document.querySelectorAll("#britishList .match-btn").forEach(btn => {
+    btn.addEventListener("click", () => handleMatchSelect(btn, "british"));
+  });
+
+  document.querySelectorAll("#americanList .match-btn").forEach(btn => {
+    btn.addEventListener("click", () => handleMatchSelect(btn, "american"));
+  });
+}
+
+function handleMatchSelect(btn, type) {
+  if (btn.classList.contains("is-matched")) return;
+
+  const btnId = parseInt(btn.dataset.id, 10);
+  const listContainer = type === "british" ? els.britishList : els.americanList;
+
+  // Clear previous selection in this list
+  listContainer.querySelectorAll(".match-btn").forEach(b => {
+    if (!b.classList.contains("is-matched")) {
+      b.classList.remove("is-selected", "is-wrong-pair");
+    }
+  });
+
+  // Highlight selection
+  btn.classList.add("is-selected");
+
+  if (type === "british") {
+    matchGameState.selectedBritish = { btn, id: btnId };
+  } else {
+    matchGameState.selectedAmerican = { btn, id: btnId };
+  }
+
+  // Check if we have a match
+  if (matchGameState.selectedBritish && matchGameState.selectedAmerican) {
+    const britBtn = matchGameState.selectedBritish.btn;
+    const amerBtn = matchGameState.selectedAmerican.btn;
+
+    if (matchGameState.selectedBritish.id === matchGameState.selectedAmerican.id) {
+      // It's a match!
+      britBtn.classList.remove("is-selected");
+      amerBtn.classList.remove("is-selected");
+      britBtn.classList.add("is-matched");
+      amerBtn.classList.add("is-matched");
+      
+      // Visual feedback
+      matchGameState.matchedPairsCount++;
+      matchGameState.selectedBritish = null;
+      matchGameState.selectedAmerican = null;
+
+      if (matchGameState.matchedPairsCount === 5) {
+        els.gameFeedback.hidden = false;
+        els.gameFeedback.className = "game-feedback good";
+        els.gameFeedback.innerHTML = `<strong>Well done!</strong> All terms matched successfully.`;
+      }
+    } else {
+      // Incorrect match
+      britBtn.classList.add("is-wrong-pair");
+      amerBtn.classList.add("is-wrong-pair");
+
+      const localBrit = matchGameState.selectedBritish.btn;
+      const localAmer = matchGameState.selectedAmerican.btn;
+
+      matchGameState.selectedBritish = null;
+      matchGameState.selectedAmerican = null;
+
+      setTimeout(() => {
+        if (localBrit && !localBrit.classList.contains("is-matched")) {
+          localBrit.classList.remove("is-selected", "is-wrong-pair");
+        }
+        if (localAmer && !localAmer.classList.contains("is-matched")) {
+          localAmer.classList.remove("is-selected", "is-wrong-pair");
+        }
+      }, 1000);
+    }
+  }
+}
+
 function attachEvents() {
   els.tabs.forEach((tab) => tab.addEventListener("click", () => switchView(tab.dataset.view)));
   document.querySelectorAll("[data-jump]").forEach((button) => {
@@ -1314,6 +1740,8 @@ function attachEvents() {
     updateScore();
   });
   els.searchInput.addEventListener("input", renderCheatSheet);
+  els.vocabSearchInput.addEventListener("input", renderBritAmericanTerms);
+  els.restartGameBtn.addEventListener("click", initMatchGame);
 }
 
 function init() {
@@ -1321,6 +1749,8 @@ function init() {
   renderLessons(els.purcomLessons, studyData.purcom);
   renderLessons(els.rizalLessons, studyData.rizal);
   renderCheatSheet();
+  renderBritAmericanTerms();
+  initMatchGame();
   attachEvents();
   updateScore();
   renderQuestion();

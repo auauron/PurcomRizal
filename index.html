@@ -26,6 +26,7 @@
         <button class="tab" data-view="purcom">PurCom</button>
         <button class="tab" data-view="rizal">Rizal</button>
         <button class="tab" data-view="practice">Practice</button>
+        <button class="tab" data-view="britamerican">British vs American</button>
         <button class="tab" data-view="cheatsheet">Cheat Sheets</button>
       </nav>
 
@@ -100,6 +101,45 @@
           <p>This section covers the uploaded Rizal handout: RA 1425, hero concepts, Rizal as symbol, 19th century context, memoirs, influences, scholarship, Dapitan, science, and art.</p>
         </div>
         <div id="rizalLessons" class="lesson-list"></div>
+      <section id="britamerican" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">PurCom Vocabulary</p>
+          <h2>British vs. American English</h2>
+          <p>Explore spelling and lexical differences. Use the interactive dictionary to search, or play the Match Game to test your memory.</p>
+        </div>
+
+        <div class="vocab-grid-layout">
+          <!-- Left side: Interactive matching minigame -->
+          <aside class="vocab-game-panel panel">
+            <div class="panel-head">
+              <h2>Vocab Matcher</h2>
+              <button id="restartGameBtn" class="text-button">Reset Game</button>
+            </div>
+            <p class="microcopy">Match 5 random British terms to their American counterparts. Select a British term, then select its American match.</p>
+            <div id="matchGameContainer" class="match-game-container">
+              <div id="britishList" class="match-column"></div>
+              <div id="americanList" class="match-column"></div>
+            </div>
+            <div id="gameFeedback" class="game-feedback" hidden></div>
+          </aside>
+
+          <!-- Right side: Dictionary search & list -->
+          <article class="vocab-list-panel panel">
+            <div class="panel-head">
+              <h2>Interactive Dictionary</h2>
+              <span id="termsCount" class="badge">132 terms</span>
+            </div>
+            <label class="search-label">
+              Search words
+              <input id="vocabSearchInput" type="search" placeholder="Type a British or American term (e.g. aubergine, elevator)...">
+            </label>
+            <div class="vocab-table-header">
+              <span>British English</span>
+              <span>American English</span>
+            </div>
+            <div id="vocabList" class="vocab-list"></div>
+          </article>
+        </div>
       </section>
 
       <section id="practice" class="view">

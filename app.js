@@ -248,11 +248,30 @@ const studyData = {
         "Domingo Lamco adopted Mercado; Governor-General Narciso Claveria's decree later required Spanish surnames.",
         "Don Francisco chose Rizal, related to the Spanish term ricial, meaning green field or new pasture.",
         "Francisco Mercado was Rizal's father; Teodora Alonso was his mother and first teacher.",
+        "Jose Rizal was born on June 19, 1861 in Calamba and was executed on December 30, 1896.",
+        "Rizal was the second son and seventh child in the Rizal-Alonso family.",
+        "Rizal had 10 siblings: Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Concepcion or Concha, Josefa, Trinidad, and Soledad.",
         "Paciano was Rizal's only brother and later a general of the Philippine Revolution.",
         "Concepcion or Concha died at age three and deeply affected young Rizal.",
         "Tio Jose influenced sketching, painting, and sculpture; Tio Manuel encouraged outdoor activity; Tio Gregorio taught hard work, observation, independent thinking, and love of printed pages."
       ],
       clue: "If a person shaped Rizal's learning, ask whether the influence was moral, intellectual, artistic, physical, or patriotic."
+    },
+    {
+      unit: "Lesson 7",
+      title: "Fast Factual Recall: Family, Names, and Dates",
+      summary: "These are the quick facts that usually appear in identification or enumeration questions. Use this card when the exam asks for names, dates, birth order, or family roles.",
+      keyPoints: [
+        "Full name commonly used in Rizal studies: Jose Protacio Rizal Mercado y Alonso Realonda.",
+        "Parents: Francisco Mercado, born April 18, 1818 in Binan, and Teodora Alonso, born November 14, 1827 in Santa Cruz, Manila.",
+        "Rizal-Alonso children in order: Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Jose, Concepcion, Josefa, Trinidad, and Soledad.",
+        "If the question asks for Rizal's siblings only, exclude Jose and enumerate the other 10 children.",
+        "Concepcion or Concha was the sibling whose death made young Rizal cry because of love and sorrow.",
+        "Rizal's mother was imprisoned during his childhood, a major memory in his memoirs.",
+        "Segunda Katigbak was Rizal's first love, but she was already engaged when they met.",
+        "Josephine Bracken later became connected to Rizal through his work as an ophthalmologist."
+      ],
+      clue: "For enumeration, first decide whether the question asks for all children including Jose, or only Rizal's siblings excluding Jose."
     },
     {
       unit: "Lesson 7",
@@ -833,6 +852,119 @@ const quizBank = [
     answer: "Rhacophorus rizali",
     aliases: ["rhacophorus rizali", "draco rizali", "apogonia rizali"],
     explanation: "The handout lists Rhacophorus rizali, Draco rizali, and Apogonia rizali."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate Rizal's 10 siblings. Do not include Jose.",
+    answer: "Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Concepcion or Concha, Josefa, Trinidad, and Soledad",
+    expected: [
+      ["saturnina"],
+      ["paciano"],
+      ["narcisa"],
+      ["olympia"],
+      ["lucia"],
+      ["maria"],
+      ["concepcion", "concha"],
+      ["josefa"],
+      ["trinidad"],
+      ["soledad"]
+    ],
+    explanation: "Jose was the seventh child. His 10 siblings were Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Concepcion or Concha, Josefa, Trinidad, and Soledad."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the 11 Rizal-Alonso children in birth order, including Jose.",
+    answer: "Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Jose, Concepcion, Josefa, Trinidad, and Soledad",
+    expected: [
+      ["saturnina"],
+      ["paciano"],
+      ["narcisa"],
+      ["olympia"],
+      ["lucia"],
+      ["maria"],
+      ["jose"],
+      ["concepcion", "concha"],
+      ["josefa"],
+      ["trinidad"],
+      ["soledad"]
+    ],
+    explanation: "The family order is Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Jose, Concepcion, Josefa, Trinidad, and Soledad."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the four changes in Senator Laurel's substitute bill for the Rizal Law.",
+    answer: "Include all works and writings of Rizal; remove the term compulsion; allow original and expurgated editions; add a conciliating exemption clause",
+    expected: [
+      ["all works", "all writings"],
+      ["remove compulsion", "removed compulsion", "term compulsion"],
+      ["original", "unexpurgated", "expurgated"],
+      ["exemption", "conciliating clause", "religious belief"]
+    ],
+    explanation: "Laurel's substitute bill broadened the works covered, removed the term compulsion, allowed original and expurgated editions, and added a religious exemption clause."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the four reasons for pangangayaw.",
+    answer: "Resources, honor or revenge, mourning requirements, and personal prominence or reward",
+    expected: [
+      ["resources", "goods", "bounty", "slaves"],
+      ["honor", "avenge", "affront", "revenge"],
+      ["mourning"],
+      ["prominence", "reward", "mercenary"]
+    ],
+    explanation: "Pangangayaw was done to secure resources, avenge honor, fulfill mourning requirements, or gain prominence or reward."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the three periods in Rizal's tripartite view of Philippine history.",
+    answer: "Liwanag or prosperity, Dilim or darkness, and Muling Liwanag or renewed enlightenment",
+    expected: [
+      ["liwanag", "prosperity"],
+      ["dilim", "darkness"],
+      ["muling liwanag", "renewed enlightenment"]
+    ],
+    explanation: "The tripartite view is Liwanag, Dilim, and Muling Liwanag."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the three species named after Rizal in the handout.",
+    answer: "Rhacophorus rizali, Draco rizali, and Apogonia rizali",
+    expected: [
+      ["rhacophorus"],
+      ["draco"],
+      ["apogonia"]
+    ],
+    explanation: "The handout lists Rhacophorus rizali, Draco rizali, and Apogonia rizali."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the GOMBURZA priests.",
+    answer: "Mariano Gomez, Jose Burgos, and Jacinto Zamora",
+    expected: [
+      ["gomez", "mariano"],
+      ["burgos", "jose burgos"],
+      ["zamora", "jacinto"]
+    ],
+    explanation: "GOMBURZA refers to Fathers Mariano Gomez, Jose Burgos, and Jacinto Zamora."
+  },
+  {
+    subject: "rizal",
+    mode: "enumeration",
+    prompt: "Enumerate the three American colonial criteria for choosing Rizal as national hero.",
+    answer: "He was not violent or militant; he had no qualms on American imperialism; he was already dead",
+    expected: [
+      ["not violent", "not militant", "peaceful", "education"],
+      ["american imperialism", "no qualms"],
+      ["dead", "already dead"]
+    ],
+    explanation: "The handout says the Americans preferred a peaceful nonmilitant hero, one with no qualms on American imperialism, and one already dead."
   }
 ];
 
@@ -852,6 +984,14 @@ const cheatItems = [
   ["Rizal", "RA 1425", "Rizal Law, signed June 12, 1956 by President Ramon Magsaysay."],
   ["Rizal", "SB 438", "Authored by Claro M. Recto and sponsored by Jose P. Laurel."],
   ["Rizal", "Religious exemption", "Exempts reading the novels under conditions, not the whole Rizal course."],
+  ["Rizal", "Birth and death", "Jose Rizal was born on June 19, 1861 in Calamba and was executed on December 30, 1896."],
+  ["Rizal", "Full name", "Jose Protacio Rizal Mercado y Alonso Realonda."],
+  ["Rizal", "Parents", "Francisco Mercado was his father; Teodora Alonso was his mother and first teacher."],
+  ["Rizal", "10 siblings", "Rizal's siblings were Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Concepcion or Concha, Josefa, Trinidad, and Soledad."],
+  ["Rizal", "11 children", "Rizal-Alonso children in order: Saturnina, Paciano, Narcisa, Olympia, Lucia, Maria, Jose, Concepcion, Josefa, Trinidad, Soledad."],
+  ["Rizal", "Birth order", "Jose Rizal was the second son and seventh child."],
+  ["Rizal", "First love", "Segunda Katigbak was Rizal's first love, but she was already engaged when they met."],
+  ["Rizal", "Family influences", "Tio Jose shaped art, Tio Manuel encouraged outdoor strength, and Tio Gregorio taught observation and independent thinking."],
   ["Rizal", "Bayani", "Community servant and courageous protector with dignity, calmness, and service to others."],
   ["Rizal", "Pangangayaw", "Raiding unallied territory for resources, honor, mourning requirements, or reward."],
   ["Rizal", "Historic vs symbolic Rizal", "Historic Rizal is the real person. Symbolic Rizal is the icon in monuments, coins, stamps, and public memory."],
@@ -871,7 +1011,8 @@ const labels = {
   tf: "True or False / Yes or No",
   mcq: "Multiple Choice",
   classification: "Classification",
-  identification: "Identification"
+  identification: "Identification",
+  enumeration: "Enumeration"
 };
 
 const els = {
@@ -935,6 +1076,7 @@ function renderHighlights() {
   ];
   const rizal = [
     "RA 1425: Recto authored, Laurel sponsored, Magsaysay signed on June 12, 1956.",
+    "Rizal had 10 siblings and was the second son and seventh child.",
     "Religious exemption does not remove the whole Rizal course.",
     "19th-century abuses explain the rise of ilustrados and reform.",
     "Dapitan proves Rizal as polymath: doctor, teacher, scientist, engineer, artist, and servant."
@@ -1007,18 +1149,22 @@ function renderQuestion() {
   els.feedbackBox.hidden = true;
   els.feedbackBox.className = "feedback";
 
-  if (question.mode === "identification") {
+  if (question.mode === "identification" || question.mode === "enumeration") {
+    const isEnumeration = question.mode === "enumeration";
     els.answerArea.innerHTML = `
-      <div class="identification-row">
-        <input id="identificationInput" type="text" autocomplete="off" placeholder="Type your answer">
-        <button id="submitIdentification" class="primary-button">Check</button>
+      <div class="${isEnumeration ? "enumeration-row" : "identification-row"}">
+        ${isEnumeration
+          ? `<textarea id="textAnswerInput" autocomplete="off" placeholder="Type your list. Any order is accepted unless the question asks for order."></textarea>`
+          : `<input id="textAnswerInput" type="text" autocomplete="off" placeholder="Type your answer">`
+        }
+        <button id="submitTextAnswer" class="primary-button">Check</button>
       </div>
     `;
-    document.querySelector("#submitIdentification").addEventListener("click", checkIdentification);
-    document.querySelector("#identificationInput").addEventListener("keydown", (event) => {
-      if (event.key === "Enter") checkIdentification();
+    document.querySelector("#submitTextAnswer").addEventListener("click", checkTextAnswer);
+    document.querySelector("#textAnswerInput").addEventListener("keydown", (event) => {
+      if (!isEnumeration && event.key === "Enter") checkTextAnswer();
     });
-    document.querySelector("#identificationInput").focus();
+    document.querySelector("#textAnswerInput").focus();
     return;
   }
 
@@ -1049,6 +1195,18 @@ function normalize(value) {
     .trim();
 }
 
+function containsTerm(text, term) {
+  const normalizedText = normalize(text);
+  const normalizedTerm = normalize(term);
+  if (!normalizedTerm) return false;
+  const escapedTerm = normalizedTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^| )${escapedTerm}( |$)`).test(normalizedText);
+}
+
+function hasAnyTerm(text, terms) {
+  return terms.some((term) => containsTerm(text, term));
+}
+
 function checkChoice(button) {
   const question = state.currentQuestion;
   const chosen = button.dataset.answer;
@@ -1064,18 +1222,50 @@ function checkChoice(button) {
   showFeedback(correct, question.answer, question.explanation);
 }
 
+function checkTextAnswer() {
+  if (state.currentQuestion.mode === "enumeration") {
+    checkEnumeration();
+    return;
+  }
+  checkIdentification();
+}
+
 function checkIdentification() {
   const question = state.currentQuestion;
-  const input = document.querySelector("#identificationInput");
-  const button = document.querySelector("#submitIdentification");
-  const userAnswer = normalize(input.value);
-  const acceptable = [question.answer, ...(question.aliases || [])].map(normalize);
-  const correct = acceptable.some((item) => item && (userAnswer === item || userAnswer.includes(item) || item.includes(userAnswer)));
+  const input = document.querySelector("#textAnswerInput");
+  const button = document.querySelector("#submitTextAnswer");
+  const userAnswer = input.value;
+  const acceptable = [question.answer, ...(question.aliases || [])];
+  const normalizedUserAnswer = normalize(userAnswer);
+  const correct = acceptable.some((item) => {
+    const normalizedItem = normalize(item);
+    return normalizedItem && (normalizedUserAnswer === normalizedItem || containsTerm(userAnswer, item));
+  });
 
   input.disabled = true;
   button.disabled = true;
   recordAnswer(correct);
   showFeedback(correct, question.answer, question.explanation);
+}
+
+function checkEnumeration() {
+  const question = state.currentQuestion;
+  const input = document.querySelector("#textAnswerInput");
+  const button = document.querySelector("#submitTextAnswer");
+  const userAnswer = input.value;
+  const expectedGroups = question.expected || [];
+  const missing = expectedGroups
+    .filter((group) => !hasAnyTerm(userAnswer, group))
+    .map((group) => group[0]);
+  const correct = missing.length === 0;
+  const detail = correct
+    ? question.explanation
+    : `${question.explanation} Missing or unclear: ${missing.join(", ")}.`;
+
+  input.disabled = true;
+  button.disabled = true;
+  recordAnswer(correct);
+  showFeedback(correct, question.answer, detail);
 }
 
 function recordAnswer(correct) {

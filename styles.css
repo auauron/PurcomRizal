@@ -400,7 +400,8 @@ label,
 
 select,
 input[type="search"],
-input[type="text"] {
+input[type="text"],
+textarea {
   min-height: 44px;
   width: 100%;
   border: 1px solid var(--line);
@@ -412,9 +413,15 @@ input[type="text"] {
 }
 
 select:focus,
-input:focus {
+input:focus,
+textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(88, 111, 99, 0.14);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
 }
 
 .primary-button,
@@ -495,10 +502,15 @@ input:focus {
   background: #f7eeee;
 }
 
-.identification-row {
+.identification-row,
+.enumeration-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
+}
+
+.enumeration-row {
+  align-items: start;
 }
 
 .feedback {

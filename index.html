@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PurCom and Rizal MidSummer Review</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">MidSummer Quiz Prep</p>
+        <h1>PurCom and Rizal Review</h1>
+        <p class="lead">A quiet study website for understanding, analysis, and fast practice before tomorrow.</p>
+      </div>
+      <div class="progress-panel" aria-live="polite">
+        <span class="progress-label">Practice accuracy</span>
+        <strong id="accuracyText">0%</strong>
+        <span id="scoreText">0 correct of 0</span>
+      </div>
+    </header>
+
+    <main>
+      <nav class="tabs" aria-label="Main sections">
+        <button class="tab is-active" data-view="dashboard">Dashboard</button>
+        <button class="tab" data-view="purcom">PurCom</button>
+        <button class="tab" data-view="rizal">Rizal</button>
+        <button class="tab" data-view="practice">Practice</button>
+        <button class="tab" data-view="cheatsheet">Cheat Sheets</button>
+      </nav>
+
+      <section id="dashboard" class="view is-active">
+        <div class="section-heading">
+          <p class="eyebrow">Start Here</p>
+          <h2>Best way to study tonight</h2>
+          <p>Do not memorize first. Understand the pattern, then drill. Your PurCom quiz is expected to be more analysis and situational, so the site is built around recognition clues.</p>
+        </div>
+
+        <div class="study-plan">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Understand the concept</h3>
+            <p>Read the compact lesson cards. Focus on the definition and the clue for recognizing it in a situation.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>Classify examples</h3>
+            <p>Use the classification questions for registers, language styles, high and low context cultures, English varieties, and World Englishes circles.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Explain the answer</h3>
+            <p>After each quiz item, read the explanation. If you can explain why, you are ready for analysis-type questions.</p>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>High-Yield PurCom</h2>
+              <button class="text-button" data-jump="purcom">Review</button>
+            </div>
+            <ul class="compact-list" id="purcomHighlights"></ul>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>High-Yield Rizal</h2>
+              <button class="text-button" data-jump="rizal">Review</button>
+            </div>
+            <ul class="compact-list" id="rizalHighlights"></ul>
+          </section>
+        </div>
+
+        <section class="visual-strip" aria-label="Visual anchors">
+          <figure>
+            <img src="assets/communication-process.png" alt="Communication process diagram from the PurCom material">
+            <figcaption>Communication is cyclical: sender, encoding, message, decoding, receiver, response, feedback, plus noise and context.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/kachru-circles.png" alt="Kachru concentric circles model from the PurCom material">
+            <figcaption>Kachru's model helps classify countries by the role of English: inner, outer, and expanding circles.</figcaption>
+          </figure>
+        </section>
+      </section>
+
+      <section id="purcom" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">Purposive Communication</p>
+          <h2>Chapters 1 to 5</h2>
+          <p>Read these like exam patterns. Ask: what is happening, what concept fits, and what clue in the situation proves it?</p>
+        </div>
+        <div id="purcomLessons" class="lesson-list"></div>
+      </section>
+
+      <section id="rizal" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">Life, Works, and Writings of Jose Rizal</p>
+          <h2>Lessons 1 to 11 Coverage</h2>
+          <p>This section covers the uploaded Rizal handout: RA 1425, hero concepts, Rizal as symbol, 19th century context, memoirs, influences, scholarship, Dapitan, science, and art.</p>
+        </div>
+        <div id="rizalLessons" class="lesson-list"></div>
+      </section>
+
+      <section id="practice" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">Exam Drill</p>
+          <h2>Practice by question type</h2>
+          <p>Choose a subject and quiz type. The app gives instant feedback and explains the reasoning.</p>
+        </div>
+
+        <div class="quiz-shell">
+          <aside class="quiz-controls" aria-label="Quiz settings">
+            <label>
+              Subject
+              <select id="subjectFilter">
+                <option value="both">Both subjects</option>
+                <option value="purcom">PurCom only</option>
+                <option value="rizal">Rizal only</option>
+              </select>
+            </label>
+            <label>
+              Question type
+              <select id="modeFilter">
+                <option value="mixed">Mixed</option>
+                <option value="tf">True or False / Yes or No</option>
+                <option value="mcq">Multiple Choice</option>
+                <option value="classification">Classification</option>
+                <option value="identification">Identification</option>
+              </select>
+            </label>
+            <button id="newQuestionBtn" class="primary-button">New question</button>
+            <button id="resetScoreBtn" class="secondary-button">Reset score</button>
+            <p class="microcopy">Tip: for identification, spelling does not need to be perfect, but the core term must be there.</p>
+          </aside>
+
+          <article class="quiz-card">
+            <div class="quiz-meta">
+              <span id="quizSubject">PurCom</span>
+              <span id="quizMode">Multiple Choice</span>
+            </div>
+            <h3 id="questionText"></h3>
+            <div id="answerArea" class="answer-area"></div>
+            <div id="feedbackBox" class="feedback" hidden></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cheatsheet" class="view">
+        <div class="section-heading">
+          <p class="eyebrow">Last-Minute Recall</p>
+          <h2>Cheat sheets without clutter</h2>
+          <p>Use the search if you need a quick definition, example, person, date, or classification clue.</p>
+        </div>
+        <label class="search-label">
+          Search topic
+          <input id="searchInput" type="search" placeholder="Try: high context, Rizal Law, GOMBURZA, register">
+        </label>
+        <div id="cheatGrid" class="cheat-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from your uploaded PurCom and Rizal MidSummer PDFs. Use this for review, then rest your brain before the quiz.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
